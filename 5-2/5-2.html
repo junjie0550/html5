@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>第5周第2次课第2个作业</title>
+    <style type="text/css">
+        .one{
+            width:30px;
+            height:30px;
+            background-color: aqua;
+            transition:width 1s;
+        }
+        .two{
+            width:30px;
+            height:30px;
+            background-color: darkmagenta;
+            transition:width 1s;
+        }
+        img{
+            width: 25px;
+            height: 25px;
+        }
+        .v{
+            color: white;
+            display: none;
+            line-height: 30px;
+            margin-left: 10px;
+            position:absolute;
+        }
+
+        div:hover{
+            width: 150px;
+        }
+        div:hover .v{
+            display: inline-block;
+        }
+        div:hover .img{
+            float: right;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="one">
+    <span class="v">访客 visitor</span>
+    <span class="img"> <img src="visitor.png"> </span>
+</div>
+<div class="two">
+    <span class="v">学生 student</span>
+    <span class="img"> <img src="student.png"> </span>
+</div>
+
+
+</body></html>
