@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>第6周第2次作业</title>
+		<style type="text/css">
+			img{
+				width: 500px;
+				height: 500px;
+			}
+			div{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%); // 横轴-50%，竖轴-50%
+			}
+		</style>
+		<script type="text/javascript">
+			function first(){
+				alert("哎哟！你干嘛！！！");
+			}
+			function change(){
+				var a=document.getElementById("demo");
+				alert(a.value);
+			}
+		</script>
+	</head>
+	<body onload="first()">
+		<div>
+			<img src="6-2.jpg"">
+			<p></p>
+			<label>
+				<input type="text" onchange="change()" id="demo" onblur="change()"">
+			</label>
+		</div>
+	</body>
+</html>
