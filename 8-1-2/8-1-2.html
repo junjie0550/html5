@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>8-1-2</title>
+		<script>
+			function myClick(){
+				var text = document.getElementById('one').value;
+				var text1 = document.getElementById('two');
+				var tip = document.getElementById('tip');
+				if(text !== null && text!== ""){
+					text1.value = text;
+					tip.innerHTML = "复制成功！";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td><input type="text" id="one"></td>
+			</tr>
+			<tr>
+				<td><input type="button" id="btn" value="复制" onclick="myClick()"></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="two" readonly="readonly"></td>
+			</tr>
+		</table>
+		<p id="tip"></p>
+	</body>
+</html>
