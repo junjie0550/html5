@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			canvas{
+				margin: 0 auto;
+				display: block;
+			}
+			body{
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="can" width="600px" height="600px">
+		</canvas>
+		<script>
+			var canvas = document.querySelector('#can');
+			var ctx = canvas.getContext('2d');
+			let img = new Image();
+			img.src="./爱心.png";
+			
+			img.onload = function(){
+				big()
+			}
+			
+			function big(){
+				ctx.clearRect(40,40,350,350);
+				ctx.drawImage(img,60,20,400,400);
+				setTimeout("small()",500)
+			}
+			function small(){
+				ctx.clearRect(60,20,400,400);
+				ctx.drawImage(img,40,40,350,350);
+				setTimeout("big()",500)
+			}
+		</script>
+	</body>
+</html>
